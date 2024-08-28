@@ -1,6 +1,6 @@
 greeting: "Hello world"
 is_active: true
-count: 5
+count: 3
 items: 
    - items 1
    - items 2
