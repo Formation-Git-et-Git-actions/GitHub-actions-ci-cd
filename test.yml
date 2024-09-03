@@ -1,0 +1,5 @@
+steps:
+  - name: Long running test
+    run: ./run-log-test.sh
+    continue-on-error: true
+    timeout-minutes: 15
