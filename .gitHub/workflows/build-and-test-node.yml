@@ -1,5 +1,4 @@
-name: Node.js Build and Test
-
+name: Node.js build and test
 on:
   push:
     branches: [main]
