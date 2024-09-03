@@ -35,8 +35,8 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Install dependencies  # Ajout de l'installation des dépendances pour s'assurer que le test a tout ce dont il a besoin
+        run: npm install
+
       - name: Run tests
         run: npm run test
-
-      
-
