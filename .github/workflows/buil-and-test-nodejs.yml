@@ -5,7 +5,7 @@ on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: github.ref == 'ref/heads/main'
+    if: github.base_ref == 'main'
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -23,7 +23,7 @@ jobs:
   
   test:
     runs-on: ubuntu-latest
-    if: github.ref == 'ref/heads/main'
+    if: github.base_ref == 'main'
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
