@@ -1,7 +1,5 @@
-
-   
+ 
 name: Node.js Build and Test
-
 on:
   push:
   pull_request:
@@ -64,5 +62,5 @@ jobs:
 
 
       - name: Run if  deploy was  successfully
-        if: ${{ success() }}
+        if: ${{ failure() }}
         run: echo "The deploy job was run successfully"
