@@ -60,6 +60,6 @@ jobs:
       - name: Deploy
         run: npm run deploy
 
-      - name: Post-deploy check
+      - name: Run if  deploy was  successfully
         if: ${{ success() }}
         run: echo "The deploy job was run successfully"
