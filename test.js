@@ -8,4 +8,8 @@ if (greet() === "Hello world") {
 } else {
     console.log("Test failed");
     process.exit(1);
+
 }
+
+
+
