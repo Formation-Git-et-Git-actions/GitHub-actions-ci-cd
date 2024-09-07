@@ -1,13 +1,13 @@
  
 name: Node.js Build and Test
 on:
-  push:
+  push: 
   pull_request:
     types: 
       - opened
       - reopened
     branches: 
-      - 'releases/**'
+      - 'releases/**' 
     paths: 
       - '**.js'       
 jobs:
