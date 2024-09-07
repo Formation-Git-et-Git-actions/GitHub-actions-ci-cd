@@ -1,0 +1,15 @@
+on:
+  schedule:
+    - cron: '* * * * *'     # Exécute le workflow chaque minute
+    - cron: '30 3 * * 6,0' # Exécute le workflow à 3h30 les samedis (6) et dimanches (0)
+
+jobs:
+  test_schedule:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Not on Saturday or Sunday
+        if: github.event.schedule == '30 3 * * 6,0'
+        run: echo "This step will be skipped on Saturday and Sunday"
+
+      - name: Every time
+        run: echo "This step will run every day, every minute"
