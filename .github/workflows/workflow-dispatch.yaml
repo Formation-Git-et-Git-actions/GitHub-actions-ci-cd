@@ -16,9 +16,12 @@ on:
         type: boolean
       environment:
         description: 'Environment to run tests against'
-        type: environment
+        type: choice
+        options:
+          - stanging
+          - preprod
+          - prod 
         required: true
-
 jobs:
   log-the-inputs:
     runs-on: ubuntu-latest
