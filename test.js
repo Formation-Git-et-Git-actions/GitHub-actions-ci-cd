@@ -1,6 +1,6 @@
 const greet = require('./index');
 
-console.log("Running tests ...");
+console.log("Running test");
 
 if(greet() === "Hello world") {
     console.log("Test passed");

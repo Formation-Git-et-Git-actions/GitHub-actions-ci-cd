@@ -1,7 +1,6 @@
  
 name: Node.js Build and Test
 on:
- 
   pull_request:  
     types: 
       - opened 
@@ -10,6 +9,10 @@ on:
       - 'releases/**' 
     paths: 
       - '**.js'       
+  workflow_run:
+    workflows: [ Python Script Execution]
+    types: 
+      - completed
 jobs:
   build:
     runs-on: ubuntu-latest
