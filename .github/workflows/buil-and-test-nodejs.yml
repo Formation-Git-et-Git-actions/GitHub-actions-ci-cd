@@ -1,7 +1,6 @@
  
 name: Node.js Build and Test
 on:
-  push:
   pull_request:  
     types: 
       - opened 
